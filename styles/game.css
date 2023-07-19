@@ -58,8 +58,8 @@ nav li a {
 }
 
 .banner-content {
-    width: 901px;
-    height: 700px;
+    /* width: 901px;
+    height: 700px; */
     background-color: #FFF;
 }
 
@@ -89,6 +89,7 @@ nav li a {
     color: #FFF;
     font-size: 1.4rem;
     font-weight: 600;
+    border: none;
 }
 
 .btn-2 {
@@ -99,12 +100,17 @@ nav li a {
     color: #FFF;
     font-size: 1.4rem;
     font-weight: 600;
+    border: none;
+}
+.btn-3 {
+    border: none;
+    border-radius: 5px;
 }
 
 .banner-img {
     width: 50%;
     height: 50%;
-
+    margin-left: 200px;
 }
 
 /* Main section start */
@@ -216,7 +222,7 @@ nav li a {
     color: #0B0223;
     font-size: 2rem;
     font-weight: 700;
-    margin-left: 439px;
+    margin-left: 300px;
 }
 
 .main-part-colour {
@@ -227,7 +233,7 @@ nav li a {
     color: #534C64;
     font-size: 1.2rem;
     font-weight: 400;
-    margin-left: 427px;
+    margin-left: 300px;
 }
 
 .main-part-img {
@@ -235,14 +241,34 @@ nav li a {
 }
 
 .img-66 {
-    position: relative;
-    top: 20px;
+    position: absolute;
+    right: 60%;
+    bottom: -5%;
+    
+    
 }
 
-.main-last-part {
+.main-last-part-1 {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 24px;
+    padding: 37px;
+    margin-top: 60px;
+    margin-left: 230px;
+    margin-right: 280px;
+}
+.main-last-part-2 {
+    display: flex;
+    margin-right: 397px;
+    margin-left: 335px;
+    padding: 5px;
+
+}
+.Rectangle-11:hover {
+    border: 1px  solid red;
+    border-radius: 5px;
+}
+.Rectangle-12:hover {
+    border: 1px  solid red;
+    border-radius: 5px;
 }
 
 /* footer section start */
@@ -315,13 +341,53 @@ nav li a {
         display: flex;
         flex-direction: column;
     }
+    .banner-img {
+        
+            width: 100%;
+            max-height: 5px;
+            
+    }
+    .main-section-img {
+        width: 100%;
+    }
+    .main-section-img-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-section-p {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-part {
+        display: grid;
+        flex-direction: column;
+    }
+    .main-part-1 {
+        padding-right: 200px;
+    }
+    
 
 }
 
 /* for tablet and other screen */
 @media screen and (min-width:576px) and (max-width:960px) {
+    
     header {
         flex-direction: column;
     }
-
+    nav {
+        flex-direction: column;
+    }
+    .section-2 {
+        flex-direction: column;
+    }
+    .main-section-img-2 {
+        flex-direction: column;
+    }
+    .main-section-p {
+        flex-direction: column;
+    }
+   .footer-class {
+    width: 85%;
+   }
 }
